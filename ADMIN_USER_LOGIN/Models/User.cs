@@ -10,8 +10,15 @@ namespace ADMIN_USER_LOGIN.Models
 {
     public class User
     {
+        public long user_id { get; set; }
+
+
         [Key]
-        public int user_id { get; set; }
+        [Required(ErrorMessage = "Email Id is required")]
+        // [Display(Name = "Email Id")]
+        [EmailAddress]
+        public string email { get; set; }
+
 
         [Required(ErrorMessage = "Title is required")]
         //[Display(Name = "Title")]
@@ -29,24 +36,17 @@ namespace ADMIN_USER_LOGIN.Models
         public string last_name { get; set; }
 
 
-         [Required(ErrorMessage = "Email Id is required")]
-       // [Display(Name = "Email Id")]
-        [EmailAddress]
-         public string email { get; set; }
-
-
         // [Required(ErrorMessage = "Phone Number is required")]
         // [Phone]
-         public int phone_number { get; set; }
+         public string phone_number { get; set; }
 
 
-        /* [Required(ErrorMessage = "Date of Birth Id is required")]
+         [Required(ErrorMessage = "Date of Birth Id is required")]
          [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-         public DateTime dob { get; set; }
-         */
+         public Nullable<DateTime> dob { get; set; }
+         
 
          [Required(ErrorMessage = "Password is required")]
-         [StringLength(255, ErrorMessage = "Must be between 9 and 255 characters", MinimumLength = 9)]
          [DataType(DataType.Password)]
          public string password { get; set; }
 
@@ -60,10 +60,6 @@ namespace ADMIN_USER_LOGIN.Models
          [DataType(DataType.Password)]
          [Compare("Password")]
          public string ConfirmPassword { get; set; }   */
-
-
-         /*[Required]
-         public string token { get; set; }*/
 
 
     }

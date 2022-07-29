@@ -17,13 +17,18 @@ namespace ADMIN_USER_LOGIN.Models
 
         }
 
-        public DbSet<User> Users { get; set; }
-
         public DbSet<Admin> Admins { get; set; }
 
-        public DbSet<ValidateOTP> validateOTPs { get; set; }
 
-        public DbSet<User_OTP> user_otp { get; set; }
+        public DbSet<Airport> Airports { get; set; }
 
+        public DbSet<SearchData> FilteredFlights  { get; set; }
+
+
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<Flight> Flights { get; set; }
+
+        public DbSet<Seat> GetSeatsByFId { get; set; }
     }
 }

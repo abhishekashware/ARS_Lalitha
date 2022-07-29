@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -11,10 +12,11 @@ namespace ADMIN_USER_LOGIN.Models
 
     public class Login
     {
-        public string username { get; set; }
-
+        [Required]
+        [EmailAddress]
         public string email { get; set; }
 
+        [Required]
         public string password { get; set; }
     }
 }

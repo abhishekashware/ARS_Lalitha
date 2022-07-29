@@ -10,11 +10,13 @@ namespace ADMIN_USER_LOGIN.Models
 {
     public class Admin
     {
+
+        [Required]
         [Key]
-        public string admin_id { get; set; }
+        public long admin_id { get; set; }
 
         [Required(ErrorMessage = " Name is required")]
-        [Display(Name = "Name")]
+       // [Display(Name = "Name")]
 
         public string name { get; set; }
 
@@ -22,13 +24,12 @@ namespace ADMIN_USER_LOGIN.Models
        
 
         [Required(ErrorMessage = "Email Id is required")]
-        [Display(Name = "Email Id")]
+      //  [Display(Name = "Email")]
         [EmailAddress]
 
          public string email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
-        [StringLength(255, ErrorMessage = "Must be between 9 and 255 characters", MinimumLength = 9)]
         [DataType(DataType.Password)]
 
         public string password { get; set; }
