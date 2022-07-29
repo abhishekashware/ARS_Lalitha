@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRLINE_RESERVATION_SYSTEM", "AIRLINE_RESERVATION_SYSTEM\AIRLINE_RESERVATION_SYSTEM.csproj", "{E75A3068-319F-4345-BA1E-53080BDE3AFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADMIN_USER_LOGIN", "ADMIN_USER_LOGIN\ADMIN_USER_LOGIN.csproj", "{1FFFDAB6-C7B2-470C-B32C-93DADF29F029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "new_airline_api", "..\new_airline_api-master\new_airline_api\new_airline_api.csproj", "{6BD408F9-FED2-4646-AF3D-CFAB8391E7D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E75A3068-319F-4345-BA1E-53080BDE3AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E75A3068-319F-4345-BA1E-53080BDE3AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E75A3068-319F-4345-BA1E-53080BDE3AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FFFDAB6-C7B2-470C-B32C-93DADF29F029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFFDAB6-C7B2-470C-B32C-93DADF29F029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFFDAB6-C7B2-470C-B32C-93DADF29F029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFFDAB6-C7B2-470C-B32C-93DADF29F029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD408F9-FED2-4646-AF3D-CFAB8391E7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD408F9-FED2-4646-AF3D-CFAB8391E7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD408F9-FED2-4646-AF3D-CFAB8391E7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD408F9-FED2-4646-AF3D-CFAB8391E7D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
