@@ -30,5 +30,8 @@ namespace ADMIN_USER_LOGIN.Models
         public DbSet<Flight> Flights { get; set; }
 
         public DbSet<Seat> GetSeatsByFId { get; set; }
+
+        public DbSet<BookingData> GetBookingData { get; set; }
+
     }
 }

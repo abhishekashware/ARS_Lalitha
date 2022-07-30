@@ -22,7 +22,7 @@ namespace ADMIN_USER_LOGIN.Controllers
         }
 
 
-        //post add flight
+        //admin login
         [HttpPost]
         [Route("login")]
         public ActionResult Login([FromBody] Login u)
@@ -54,6 +54,8 @@ namespace ADMIN_USER_LOGIN.Controllers
 
         //------------------------ FLIGHTS---------------------
 
+
+        //get all flights
         [HttpGet]
         [Route("flights")]
         public ActionResult GetFlights()
@@ -71,6 +73,7 @@ namespace ADMIN_USER_LOGIN.Controllers
 
         }
 
+        //add new flight
         [HttpPost]
         [Route("addflight")]
         public ActionResult AddFlight([FromBody] FlightModel f)
@@ -103,6 +106,8 @@ namespace ADMIN_USER_LOGIN.Controllers
 
         }
 
+
+        //delete flight by flight name
         [HttpDelete]
         [Route("flight/{name}")]
         public ActionResult DeleteFlight(string name)
